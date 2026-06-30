@@ -1,10 +1,22 @@
 @import "tailwindcss";
 
+:root {
+  --primary: #f9c265;
+  --secondary: #fef4e6;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
 @font-face {
-  font-family: inter;
-  src: url(../src/assets/font/Inter.ttf);
+  font-family: munika;
+  src: url(../src/assets/font/munika-semibold.otf);
 }
 
 @theme {
-  --font-inter: inter;
+  --font-munika: munika;
 }
