@@ -1,4 +1,5 @@
 import Header from "./components/layout/Header";
+import Courses from "./components/sections/Courses";
 import Education from "./components/sections/Education";
 import Hero from "./components/sections/Hero";
 import Review from "./components/sections/Review";
@@ -15,6 +16,7 @@ export default function App() {
       <Review />
       <Education />
       <Skill />
+      <Courses />
     </div>
   );
 }

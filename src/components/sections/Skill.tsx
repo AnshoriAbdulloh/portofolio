@@ -1,11 +1,14 @@
 export default function Skill() {
   return (
-    <div className='bg-gray-50 min-h-screen p-8 flex items-center justify-center'>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full'>
-        <div className='bg-[#1e1e1e] text-white p-8 rounded-2xl flex flex-col justify-between min-h-[200px] md:col-span-2'>
+    <section className='bg-gray-50 min-h-screen py-8 flex items-center justify-center w-full'>
+      <div
+        className='grid md:grid-cols-2 lg:grid-cols-3 gap-6  container lg:px-12 px-5 
+      *:md:min-h-60 *:xl:min-h-64'
+      >
+        <div className='bg-[#1e1e1e] text-white p-8 rounded-2xl flex flex-col justify-between md:col-span-2'>
           <div>
             <h2 className='text-3xl font-normal'>
-              Our{" "}
+              Our
               <span className='text-[#cda252] italic font-serif'>Features</span>
             </h2>
             <p className='text-3xl font-semibold mt-1'>Special For you</p>
@@ -78,6 +81,6 @@ export default function Skill() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
