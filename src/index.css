@@ -12,6 +12,15 @@
   background-color: var(--secondary);
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @font-face {
   font-family: munika;
   src: url(../src/assets/font/munika-semibold.otf);
