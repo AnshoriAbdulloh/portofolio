@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className='sticky top-0 z-40 bg-transparent backdrop-blur-xl w-full transition-all duration-300 '>
+    <header className='sticky top-0 z-40 bg-(--primary) w-full transition-all duration-300 '>
       <div className='container lg:px-12 px-5 mx-auto py-3 flex items-center justify-between'>
         <a href='#' className='flex items-center gap-2.5 '>
           <span className='text-lg tracking-tight'>bla bla bla</span>

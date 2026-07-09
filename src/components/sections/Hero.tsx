@@ -4,9 +4,9 @@ export default function Hero() {
   return (
     <section
       id='about'
-      className='relative container lg:px-12 px-5 py-10 overflow-hidden '
+      className='relative w-full py-10 overflow-hidden bg-(--primary) flex justify-center'
     >
-      <div className='grid lg:grid-cols-12 gap-12 lg:gap-8 items-center'>
+      <div className='grid lg:grid-cols-12 gap-12 container lg:px-12 px-5 lg:gap-8 items-center'>
         {/* <!-- Left Info Column --> */}
         <div className='lg:col-span-6 space-y-6 md:space-y-8 z-10'>
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-black text-brandDark leading-[1.1] tracking-tight'>

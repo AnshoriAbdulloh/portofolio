@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #f9c265;
-  --secondary: #fef4e6;
+  /* --primary: #f9c265;
+  --secondary: #fef4e6; */
+  --primary: #7096d1;
+  --secondary: #d0e3ff;
+  --tertiary: #10367d;
+  --base: #edf1f6;
 }
 
 .bg-primary {
@@ -19,6 +23,46 @@
 .no-scrollbar {
   -ms-overflow-style: none; /* IE & Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.tool {
+  width: 140px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+}
+
+.tool svg {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.tool:hover svg {
+  transform: scale(1.15);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @font-face {
