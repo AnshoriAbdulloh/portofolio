@@ -4,7 +4,7 @@ export default function AboutMe() {
       <div className={`lg:container w-full lg:px-12`}>
         <div className={`bg-[#1f1f1f] text-white rounded-t-4xl pt-5 pb-4 px-5`}>
           <div
-            className={`p-5 h-full grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 
+            className={`p-5 pt-10 h-full grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 
               [&_ul_li:first-child]:font-bold  [&_ul_li:first-child]:text-xl`}
           >
             <ul>
