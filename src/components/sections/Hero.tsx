@@ -1,4 +1,4 @@
-import HeroImage from "../../assets/picture/dataMaintenance.png";
+import HeroImage from "../../assets/picture/mecrop.jpg";
 
 export default function Hero() {
   return (
@@ -14,9 +14,9 @@ export default function Hero() {
           </h1>
 
           {/* <!-- Graphic for Mobile (Displays above description only on small screens) --> */}
-          <div className='lg:hidden w-full max-w-sm mx-auto my-8 relative float-element'>
+          <div className='lg:hidden w-full max-w-sm mx-auto my-8 relative float-element '>
             {/* <!-- Dynamic Hero Illustration embedded for absolute visual fidelity --> */}
-            <img src={HeroImage} alt='hero' />{" "}
+            <img src={HeroImage} alt='hero' className={`rounded-3xl`} />{" "}
           </div>
 
           <p className='text-[16px] md:text-xl leading-relaxed max-w-xl'>
@@ -42,9 +42,16 @@ export default function Hero() {
         </div>
 
         {/* <!-- Right Graphic Column (Desktop) --> */}
-        <div className='hidden lg:block lg:col-span-6 relative float-element'>
+        <div className=' hidden lg:block lg:col-span-6 float-element '>
           {/* <!-- Dynamic Hero Illustration embedded for absolute visual fidelity --> */}
-          <img src={HeroImage} alt='hero' className={`p-10 `} />
+          <div className={`relative w-fit mx-auto rounded-3xl `}>
+            <img
+              src={HeroImage}
+              alt='hero'
+              className={` max-h-125 rounded-3xl `}
+            />
+            <div className='absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent rounded-3xl'></div>
+          </div>
         </div>
       </div>
     </section>

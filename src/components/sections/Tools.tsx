@@ -1,13 +1,4 @@
-import {
-  FaReact,
-  FaNodeJs,
-  FaHtml5,
-  FaCss3Alt,
-  FaGitAlt,
-  FaGithub,
-  FaDocker,
-  FaFigma,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaHtml5, FaGithub } from "react-icons/fa";
 
 import {
   SiTailwindcss,
@@ -17,6 +8,7 @@ import {
   SiFirebase,
   SiMongodb,
   SiVite,
+  SiExpress,
 } from "react-icons/si";
 
 const tools = [
@@ -27,18 +19,17 @@ const tools = [
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-  { name: "HTML", icon: FaHtml5, color: "#FFFFFF" },
-  { name: "PlatformIO", icon: SiPlatformio, color: "#F05032" },
-  { name: "GitHub", icon: FaGithub, color: "#FFFFFF" },
-  { name: "Docker", icon: FaDocker, color: "#2496ED" },
-  { name: "Figma", icon: FaFigma, color: "#F24E1E" },
+  { name: "HTML", icon: FaHtml5, color: "#dd4b25" },
+  { name: "PlatformIO", icon: SiPlatformio, color: "#f77b00" },
+  { name: "GitHub", icon: FaGithub, color: "#000000" },
   { name: "Vite", icon: SiVite, color: "#646CFF" },
+  { name: "Express.js", icon: SiExpress, color: "#000000" },
 ];
 
 export default function Tools() {
   return (
-    <section className={`bg-(--secondary) w-full py-10`}>
-      <h2 className='text-4xl text-center text-white font-bold mb-10'>
+    <section className={`bg-(--secondary) w-full py-10  overflow-hidden`}>
+      <h2 className='text-4xl text-center text-black font-bold mb-10'>
         Tools I Use
       </h2>
       <div className='marquee'>
@@ -49,7 +40,7 @@ export default function Tools() {
             <div key={index} className='tool'>
               <Icon size={55} style={{ color: tool.color }} />
 
-              <p>{tool.name}</p>
+              <p className={`text-black`}>{tool.name}</p>
             </div>
           );
         })}
